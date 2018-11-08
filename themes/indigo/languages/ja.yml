@@ -1,0 +1,32 @@
+global:
+  search_input_hint: "検索"
+
+post:
+  continue_reading: "続きを読む…"
+  last_updated: "最終更新："
+
+footer:
+  license: 'このブログの内容物は<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ja">クリエイティブ・コモンズ 表示 - 非営利 - 継承 4.0 国際ライセンスの下に提供されています</a>'
+
+tag:
+  all: "全て"
+  tags: "タグ"
+
+categories: カテゴリ
+search: 検索
+tags: タグ
+tagcloud: タグクラウド
+tweets: ツイート
+prev: 戻る
+next: 次へ
+comment: コメント
+archive_a: アーカイブ
+archive_b: "アーカイブ: %s"
+page: ページ %d
+recent_posts: 最近の投稿
+newer: 次の記事
+older: 前の記事
+share: 共有
+powered_by: Powered by
+rss_feed: RSSフィード
+category: カテゴリ

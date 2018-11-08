@@ -1,0 +1,32 @@
+global:
+  search_input_hint: "Search"
+
+post:
+  continue_reading: "Continue reading..."
+  last_updated: "Last updated: "
+
+footer:
+  license: 'This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.'
+
+tag:
+  all: "All"
+  tags: "Tags"
+
+categories: Categories
+search: Search
+tags: Tags
+tagcloud: Tag Cloud
+tweets: Tweets
+prev: Prev
+next: Next
+comment: Comments
+archive_a: Archives
+archive_b: "Archives: %s"
+page: Page %d
+recent_posts: Recent Posts
+newer: Newer
+older: Older
+share: Share
+powered_by: Powered by
+rss_feed: RSS Feed
+category: Category
