@@ -82,7 +82,7 @@ deploy:
   type:
 
 server:
-  port: 4001
+  port: 4000
   compress: true
 
 feed:
