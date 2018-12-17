@@ -9,7 +9,7 @@
 #    target: _blank    是否跳出，省略则在当前页面打开
 menu:
   home:
-    text: 主页
+    text: 首页
     url: /
   archives:
     text: 归档
@@ -17,18 +17,15 @@ menu:
   tags:
     text: 标签
     url: /tags
-  th-list:
-    text: 分类
-    url: /categories
+  # th-list:
+  #   text: 分类
+  #   url: /categories
   github:
     url: https://github.com/yushengyuan1993
     target: _blank
   # weibo:
   #   url: http://www.weibo.com/
   #   target: _blank
-  # link:
-  #   text: 测试
-  #   url: /tag
 
 # 你的头像url
 avatar: /img/avatar.jpg
@@ -46,9 +43,9 @@ email: yushare1993@gmail.com
 color: '#3F51B5'
 
 # 页面标题
-tags_title: Tags
-archives_title: Archives
-categories_title: Categories
+tags_title: "标签"
+archives_title: "归档"
+categories_title: "分类"
 
 # 文章截断
 excerpt_render: false
@@ -145,7 +142,8 @@ canonical: false
 since_year: 2015
 
 # 用户页面中作者相关的描述性文字，如不需要设为 false
-about: 用户页面中作者相关的描述性文字，如不需要设为 false
+# about: 用户页面中作者相关的描述性文字，如不需要设为 false
+about: false
 
 # “不蒜子”访问量统计，详见 http://ibruce.info/2015/04/04/busuanzi/
 visit_counter:

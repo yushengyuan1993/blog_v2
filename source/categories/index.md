@@ -1,5 +1,6 @@
 ---
 title: categories
+layout: categories
 comments: false
-date: 2018-09-12 22:23:01
+date: 2018-12-17 18:21:36
 ---
