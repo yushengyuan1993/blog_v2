@@ -81,6 +81,10 @@ theme: indigo
 deploy:
   type:
 
+server:
+  port: 4001
+  compress: true
+
 feed:
   type: atom
   path: atom.xml
