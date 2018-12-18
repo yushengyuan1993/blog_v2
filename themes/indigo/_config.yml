@@ -34,7 +34,7 @@ avatar_link: /
 # 头像背景图
 brand: /img/brand.jpg
 # favicon
-favicon: /favicon.ico
+favicon: /images/favicon.png
 
 # email
 email: yushare1993@gmail.com
@@ -43,9 +43,9 @@ email: yushare1993@gmail.com
 color: '#3F51B5'
 
 # 页面标题
-tags_title: "标签"
-archives_title: "归档"
-categories_title: "分类"
+tags_title: "Tags"
+archives_title: "Archives"
+categories_title: "Categories"
 
 # 文章截断
 excerpt_render: false
@@ -84,7 +84,7 @@ toc:
 cnzz: false
 
 # 百度统计，如要开启，改为你的 key
-baidu_tongji: false
+baidu_tongji: eb7d549595bfdb15f99f36861d29c30d
 
 # 腾讯分析，如要开启，输入站点id
 tajs: false
