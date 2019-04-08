@@ -15,6 +15,7 @@ categories:
 3. <a href="#then">Promise.then 的链式调用</a>
 4. <a href="#catch">中断或取消 Promise 链</a>
 5. <a href="#async/await">使用基于 Promise 的 async/await</a>
+6. <a href="#summary">小结</a>
 
 
 #### <a name="primise">1. 原生API函数的 Promise 化</a>
@@ -229,7 +230,7 @@ categories:
   - 只要在 Promise 执行过程中抛出异常，都会直接跳转到 `catch` 中。但是这样的做法有一个缺点，无法区分程序本身的异常，还是手动抛出的异常。所以需要手动设置一个标识标量，来区分是为了中断执行还是本身的程序异常。
   - 上面的代码中，执行到 `2` 时，由于抛出了终端信号，所以会直接跳过 `3` 直接执行 `catch` 部分。
 
-#### <a name="async/await">4. 使用基于 Promise 的 async/await</a>
+#### <a name="async/await">5. 使用基于 Promise 的 async/await</a>
 - `async`：
   ```js
   async function f() {
@@ -307,5 +308,15 @@ categories:
   * endTime - startTime = 501
   */
   ```
+
+#### <a name="summary">6. 小结</a>
+- 放在一个函数前的 `async` 有两个作用：
+  1. 使函数总是返回一个 `Promise`。
+  2. 允许在这其中使用 `await`。
+- `Promise` 前面的 `await` 关键字能够使JavaScript等待，直到 `Promise` 处理结束。然后：
+  1. 如果它是一个错误，异常就产生了，就像在那个地方调用了`throw error` 一样。
+  2. 否则，它会返回一个结果，我们可以将它分配给一个值。
+- 有了 `async/await`，我们很少需要写 `Promise.then/catch`，但是我们仍然不应该忘记它们是基于 `Promise` 的，因为有些时候（例如在最外面的范围内）我们不得不使用这些方法。
+
 
 <p style="text-align: right">参考文档 [Promise](https://aotu.io/notes/2016/01/08/promise/)</p>
