@@ -6,3 +6,5 @@ node_modules/
 /node_modules
 public/
 .deploy*/
+1_blog.yvshare.cn_bundle.crt
+2_blog.yvshare.cn.key
