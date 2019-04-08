@@ -33,20 +33,20 @@ categories:
   ```
   ```js
   var lists = document.getElementsByTagName("li");
- 	for(var i = 0; i < lists.length; i ++){
+  for(var i = 0; i < lists.length; i ++){
  	  lists[i].onclick = (function(i){
       return function() {
         console.log(i);
       } //不用闭包的话，值每次都是 5
     })(i);
- 	}
+  }
 
   //当然，使用 ES6 也可以这么干
   for(let j = 0; j < lists.length; j ++){
  	  lists[j].onclick = () => {
       console.log(j)
     }
- 	}
+  }
   ```
 
 - 看一个更加直白的例子：
