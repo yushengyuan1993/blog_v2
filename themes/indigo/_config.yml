@@ -126,6 +126,7 @@ valine:
   placeholder: '说点什么吧~' # Comment Box placeholder
   guest_info: nick,mail # Comment header info
   pageSize: 10 # comment list page size
+  visitor: true # visitors
 
 # 是否开启Hyper Comments，填写id则启用，false则禁用。http://hypercomments.com
 # Hyper Comments support. Write your id here, or false to disable
