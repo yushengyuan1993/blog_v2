@@ -4,8 +4,7 @@ title: HTML5 存储 webStorage
 date: 2017-02-12 17:56:48
 tags: 
     - HTML5
-    - sessionStorage
-    - localStorage
+    - JavaScript
 categories:
 ---
 

@@ -3,7 +3,7 @@ id: 0808024
 title: JavaScript 异步编程
 date: 2017-12-26 11:48:34
 tags:
-  - javascript
+  - JavaScript
   - promise
 categories:
 ---

@@ -1,10 +1,10 @@
 ---
 id: 032
-title: 使用express.js和mock.js搭建<mock-server>
+title: 使用Express.js和Mock.js搭建<mock-server>
 date: 2018-03-10 13:21:12
 tags:   
-  - expressjs
-  - mockjs
+  - Express
+  - Mock
 categories:
 ---
 

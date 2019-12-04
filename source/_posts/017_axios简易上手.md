@@ -3,7 +3,7 @@ id: 017
 title: axios 简易上手
 date: 2017-12-23 10:23:18
 tags:
-  - ES6
+  - es6
   - ajax
   - Promise
 categories:
