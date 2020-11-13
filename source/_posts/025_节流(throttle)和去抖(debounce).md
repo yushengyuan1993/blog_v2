@@ -1,6 +1,6 @@
 ---
 id: 025
-title: 函数节流(throttle)和函数去抖(debounce)
+title: 节流(throttle)和去抖(debounce)
 date: 2017-08-07 20:14:46
 tags:
   - JavaScript
@@ -131,8 +131,8 @@ _.debounce = function(func, wait, immediate) {
 #### <a>3、使用场景</a>
 
   **只要牵涉到连续事件或频率控制相关的应用都可以考虑到这两个函数，比如：**
-- 游戏射击，keydown 事件
-- 文本输入、自动完成，keyup 事件
+- 鼠标 keyup、keydown 事件
+- 文本输入 oninput
 - 鼠标移动，mousemove 事件
 - DOM 元素动态定位，window 对象的 resize 和 scroll 事件
 
