@@ -1,7 +1,7 @@
 ---
 id: 045
 title: window的load事件和document的DOMContentLoaded事件
-date: 2019-03-25 15:49:36
+date: 2019-08-25 15:49:36
 tags:
   DOM
 ---
