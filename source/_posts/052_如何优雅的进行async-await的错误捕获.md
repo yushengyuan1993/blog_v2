@@ -10,17 +10,17 @@ tags:
 
 #### 什么是async/await
 `async/await`是ES7中提出来的新特性，他是基于`Promise`来使用的，常见的用法：
-```js
-  import userLogin from '../api/user/login';
+  ```js
+    import userLogin from '../api/user/login';
 
-  async function onUserLogin(params) {
-    const res = await userLogin(params);
+    async function onUserLogin(params) {
+      const res = await userLogin(params);
 
-    if (res.code === 10000) {
-      // your code
+      if (res.code === 10000) {
+        // your code
+      }
     }
-  }
-```
+  ```
 这里就会出现一种情况，这段代码`const res = await userLogin(params)`由于是向服务端请求一个接口，但是这里的错误类型就很多了，比如说网络异常（超时等）、接口返回异常（40x/50x）、返回了错误的业务代码（code !== 10000），甚至时语法错误。
 
 #### 使用try/catch来捕获错误
