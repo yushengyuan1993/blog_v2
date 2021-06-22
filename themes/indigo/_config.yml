@@ -118,8 +118,8 @@ gitment: false
 # Valine Comment system. https://valine.js.org
 valine:
   enable: true # 如果你想使用valine，请将值设置为 true
-  appId: 'HFxndnBBkhMlVxIHf5qIvhKf-9Nh9j0Va' # your leancloud appId
-  appKey: 'sm0T8etC9HFVYDVTL395W880' # your leancloud appKey
+  appId: '6JiWaPgQishNtVOz8Arn7a14-gzGzoHsz' # your leancloud appId
+  appKey: 'tBGgKEkWaIqSEaFo2GYxibPx' # your leancloud appKey
   notify: true # Mail notify
   verify: true # Verify code
   avatar: mm # Gravatar style : mm/identicon/monsterid/wavatar/retro/hide
