@@ -1,7 +1,7 @@
 ---
 id: 052
-title: 如何优雅的进行async/await的错误捕获
-date: 2021-03-21 19:28:29
+title: 如何优雅的进行async/await错误捕获
+date: 2021-03-02 19:28:29
 tags:
   - JavaScript
 ---
