@@ -2,6 +2,7 @@
 title: 在微信小程序开发中使用sass
 date: 2021-03-27 10:21:53
 tags:
+  - 前端工程化
 ---
 
 在微信小程序中使用`sass`，需要自己做一些相关配置，这里有一个[demo](https://github.com/yushengyuan1993/wechat-miniprogram-scss)，这里介绍两种常见的配置方式，亲测可用。
