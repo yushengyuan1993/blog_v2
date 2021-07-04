@@ -3,9 +3,13 @@ title: 在微信小程序开发中使用sass
 date: 2021-03-27 10:21:53
 tags:
   - 前端工程化
+  - 小程序
+  - gulp
 ---
 
 在微信小程序中使用`sass`，需要自己做一些相关配置，这里有一个[demo](https://github.com/yushengyuan1993/wechat-miniprogram-scss)，这里介绍两种常见的配置方式，亲测可用。
+
+查看本文对应的的演示项目请点击这里 [wechat-miniprogram-scss](https://github.com/yushengyuan1993/wechat-miniprogram-scss)。
 
 #### 使用VSCode的插件进行配置(推荐)
 1. 安装 `easy sass` 插件
