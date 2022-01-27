@@ -1,4 +1,4 @@
-## Eslint + Husky + Lint-staged + Commitlint
+## Eslint + Prettier + Husky + Lint-staged + Commitlint
 
 > vue@2.6.10 + vuex@3.1.0 + vue-router@3.0.6
 
@@ -223,8 +223,28 @@ node_modules
 dist
 ```
 
+### Prettier
+1. 安装 [`Prettier`](https://prettier.io)
+```sh
+npm install --save-dev --save-exact prettier
+```
+2. 生成一个空的配置文件
+```sh
+# 生成空的配置文件
+echo {}> .prettierrc.json
+```
+3. 生成一个 .prettierignore 文件
+```
+# Ignore artifacts:
+build
+coverage
+
+# Ignore all HTML files:
+*.html
+```
+
 ### Husky
-1. 安装 `husky`
+1. 安装 [`husky`](https://github.com/typicode/husky)
 ```sh
 npm npm install husky -D
 ```
@@ -241,7 +261,7 @@ npm npm install husky -D
 npm run prepare
 ```
 3. 添加 `hook`
-注意：这里的 `npm test` 就是你最终要运行的钩子命令，一般就是 **npm run lint** 
+注意：这里的 `npm test` 就是你最终要运行的钩子命令，一般就是 **npm run lint** ，新版本的 `vue cli` 使用的是 [`@vue/cli`](https://cli.vuejs.org/zh/guide/)，对应的 lint 命令为 `vue-cli-service lint`。
 ```sh
 npx husky add .husky/pre-commit "npm test" # npm test ==> npm run lint
 git add .husky/pre-commit
@@ -255,10 +275,8 @@ git commit -m "Keep calm and commit"
 最终 `husky` 会在根目录下生成一个 `.husky/` 文件夹，里面就是对应的配置
 
 
-
-
 ### Lint-staged
-1. 安装 `lint-staged`
+1. 安装 [`lint-staged`](https://github.com/okonet/lint-staged)
 ```sh
 npx mrm@2 lint-staged
 ```
@@ -268,20 +286,21 @@ npx mrm@2 lint-staged
   ```json
   // 这是默认配置
   "lint-staged": {
-    "*.js": "eslint --fix"
+    "*.{js,vue}": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
   },
 
   // 建议改成
   "lint-staged": {
     "src/**/*.{js,vue}": [
       "npm run lint"
-    ]
+    ],
+    "*.{js,css,md}": "prettier --write"
   },
   ```
 
 ### Commitlint
-1. 安装依赖
-[@commitlint](https://github.com/conventional-changelog/commitlint)
+1. 安装依赖 [`@commitlint`](https://github.com/conventional-changelog/commitlint)
 ```sh
 # 会自动安装 @commitlint/cli 和 @commitlint/config-conventional 两个依赖
 npm install --save-dev @commitlint/{config-conventional,cli}
