@@ -7,7 +7,7 @@ tags:
 
 ### 缘起node_modules
 很久以前，前端圈子里就流传着这么一张关于`node_modules`的图
-![node_modules困境](/images/58/node_modules.jpg)
+![node_modules困境](/images/58/node-modules.png)
 
 这就是当时的node_modules困境，当使用 npm 或 yarn 时，如果你有100个项目使用了某个依赖（dependency），就会有100份该依赖的副本保存在硬盘上。
 
