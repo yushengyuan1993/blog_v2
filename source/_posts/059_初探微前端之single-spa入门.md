@@ -2,8 +2,10 @@
 title: 初探微前端之single-spa入门
 date: 2022-06-19 14:01:27
 tags:
-  - 前端工程化
+  - 微前端
 ---
+
+*查看* [single-spa](https://github.com/yushengyuan1993/single-spa) *demo*
 
 ### 1. 微前端概述
 > [Why Not Iframe](https://www.yuque.com/kuitos/gky7yw/gesexv)
@@ -49,8 +51,7 @@ tags:
   通过 `import-map`(允许我们加载网络模块) 和 `webpack` 中的 `externals` 属性。
 
 ### 2. 模块化解决方案Systemjs
-
-#### 介绍
+#### 2.1 介绍
   - 在微前端架构中，微应用被打包为模块，但浏览器对模块化的支持不够好，需要使用 [`systemjs`](https://github.com/systemjs/systemjs) 实现浏览器中的模块化。
 
   - `systemjs` 是一个用于实现模块化（动态的加载模块）的 `JavaScript` 库，有属于自己的模块化规范。
@@ -87,7 +88,6 @@ tags:
   ```
 
 ### 3. 微前端框架single-spa
-
 #### 3.1 single-spa 概述
 > single-spa 是一个实现微前端架构的框架。
 
@@ -95,7 +95,6 @@ tags:
   1. `single-spa-application`：微前端架构中的微应用，可以用vue、react、angular 等框架。
   2. `single-spa root config`：创建微前端容器应用。
   3. `utility modules`：公共模块应用，非渲染组件，用于跨应用共享javascript 逻辑的微应用。
-
 #### 3.2 创建容器应用
 1. 安装 `single-spa` 脚手架工具：
   ```sh
@@ -109,7 +108,6 @@ tags:
 4. 启动应用：`npm start`
 5. root config 模板文件：`src/index.ejs`
 6. root config 入口文件：`src/[项目名称]-root-config.js`
-
 #### 3.3 创建不依赖框架的应用
 1. 初始化：
    1. `mkdir store && cd "$_"`
@@ -208,7 +206,7 @@ tags:
       }
     </script>
     ```
-#### 3.4 创建基于 Vue 的应用
+#### 3.3 创建基于 Vue 的应用
 1. 初始化：
    1. `create-single-spa`
    2. 项目名称：report 
