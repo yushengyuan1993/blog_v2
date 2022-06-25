@@ -2,6 +2,8 @@
 
 > vue@2.6.10 + vuex@3.1.0 + vue-router@3.0.6
 
+> element-ui@2.13.2
+
 ### Eslint
 1. 安装依赖
 ```sh
@@ -261,7 +263,7 @@ npm npm install husky -D
 npm run prepare
 ```
 3. 添加 `hook`
-注意：这里的 `npm test` 就是你最终要运行的钩子命令，一般就是 **npm run lint** ，新版本的 `vue cli` 使用的是 [`@vue/cli`](https://cli.vuejs.org/zh/guide/)，对应的 lint 命令为 `vue-cli-service lint`。
+注意：这里的 `npm test` 就是你最终要运行的钩子命令，一般就是 **npm run lint** ，新版本的 `vue cli` 使用的是 [`@vue/cli`](https://cli.vuejs.org/zh/guide/)，对应的 lint 命令为 `vue-cli-service lint`，在执行前请运行 `npx browserslist@latest --update-db` 来更新 [`browserslist`](https://github.com/browserslist/browserslist#browsers-data-updating) 配置。
 ```sh
 npx husky add .husky/pre-commit "npm test" # npm test ==> npm run lint
 git add .husky/pre-commit
@@ -331,3 +333,30 @@ npx husky add .husky/commit-msg 'npx --no -- commitlint --edit "$1"'
 npx --no -- commitlint --edit "$1"
 ```
 配置完毕，可以体验 `commitlint` 带来的良好体验了
+
+### element-ui的按需引入
+1. 安装依赖
+  ```sh
+  npm install @babel/preset-env -D
+  npm install babel-plugin-component -D
+  ```
+
+2. 配置babel
+  ``` sh
+  # .babelrc
+  {
+    "presets": [["@babel/preset-env", { "modules": false }]],
+    "plugins": [
+      ["@vue/babel-plugin-transform-vue-jsx"],
+      [
+        "component",
+        {
+          "libraryName": "element-ui",
+          "styleLibraryName": "theme-chalk"
+        }
+      ]
+    ]
+  }
+  ```
+
+3. 按需引入
