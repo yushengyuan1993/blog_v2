@@ -206,7 +206,7 @@ tags:
       }
     </script>
     ```
-#### 3.3 创建基于 Vue 的应用
+#### 3.4 创建基于 Vue 的应用
 1. 初始化：
    1. `create-single-spa`
    2. 项目名称：report 
@@ -357,7 +357,7 @@ tags:
       }
     </script>
     ```
-#### 3.4 创建跨应用共享逻辑utility module
+#### 3.5 创建跨应用共享逻辑utility module
 > 无需注册
 1. 初始化：
    1. `create-single-spa`
