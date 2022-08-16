@@ -80,7 +80,16 @@ const store = useStore()
  */
 export const useCounterStore = defineStore('counter', {
   state: () => {
-    return { count: 0 }
+    return {
+      count: 0,
+      msg: 'hello'
+    }
+  },
+  actions: {
+    async setCount(ctx) {
+      const count = await getCount()
+      this.count = count
+    }
   }
 })
 
@@ -91,6 +100,18 @@ import { useCounterStore } from '../store/piniaStore.js';
 const store = useCounterStore()
 
 <p>{{ store.count }}</p>
+```
+
+`pinia` 支持响应式的 解构 `state`，同时也可以解构出 `actions`：
+```js
+import { storeToRefs } from 'pinia'
+const store = useCounterStore()
+
+// 解构 state， 并使其保持响应式
+const { count, msg } = storeToRefs(store)
+
+// 解构 actions
+const { setCount } = store
 ```
 
 ## Getters
