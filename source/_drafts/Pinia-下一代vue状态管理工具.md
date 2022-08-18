@@ -1,7 +1,7 @@
 ---
 title: Pinia-下一代vue状态管理工具
 date: 2022-08-15 19:23:45
-updated: 2022-08-15 19:23:45
+updated: 2022-08-15 20:23:45
 tags:
 ---
 
@@ -327,3 +327,5 @@ const storeB = useStoreB()
 3. `pinia` 拥有完整的 `typescript` 支持；
 4. `pinia` 支持使用插件扩展；
 5. 。。。。。。
+
+[🌰](https://github.com/yushengyuan1993/pinia-vuex)
